@@ -57,7 +57,24 @@
   font-weight: 600;
 
   transition: background-color 0.2s ease;
+  position: relative;
+}
 
+.countdownButtonFinished::after {
+  content: '';
+  display: block;
+  position: absolute;
+
+  top: 4.7rem;
+  width: 100%;
+  height: 0.3rem;
+  background: var(--green);
+
+  transition: .7s ease;
+}
+
+.countdownButton img{
+  padding-left: 1rem;
 }
 
 .countdownButton:not(:disabled):hover {
